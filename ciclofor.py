@@ -1,18 +1,12 @@
-# for observador in range(0,12,2):
-#     print(observador)
+for observador in range(0,12,2):
+    print(observador)
+
+# en este ciclo for comienza en cero y va sumando de 2 en 2 hasta 10 ya que son pares, siempre va hasta antes del rango que pongamos
 
 # dato = int(input("digite un numero"))
 # for observador in range(dato):
 #     print(observador)
 
 
-nombres = ["juan", "daniel", "sara", "samuel"]
-#acceder a toda la lista
-#print(nombres)
-#acceder a una posicion o varias
-#print(nombres[0], nombres[1])
 
-# para recorrer el ciclo, por iteracion obtener cada uno de los datos, es como una variable auxiliar
-for nombre in nombres:
-    print(nombre)
 

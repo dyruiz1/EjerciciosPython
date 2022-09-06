@@ -1,78 +1,56 @@
 
-lista=[1,2,3,4,5]
+# listas: podemos almacenar varios datos en una sola referencia en memoria
+
+nombres = ["juan", "juan", "sara", "samuel"]
+#acceder a toda la lista
+nombres.remove("juan")
+print(nombres)
+
+#acceder a una posicion o varias
+#print(nombres[0], nombres[1])
+
+# para recorrer el ciclo, por iteracion obtener cada uno de los datos, es como una variable auxiliar como si fuera un for each
+# for nombre in nombres:
+#     print(nombre)
+
+
+# lista=[1,2,3,4,5]
 #son entre corchetes
 
-#Recorrer un lista
-for numero in lista:
-    print(numero)
+#RECORRER UNA LISTA
+# for numero in lista:
+#     print(numero)
 
-#APPEND 
-lista.append(100)
-print(lista)
+# #APPEND 
+# lista.append(100)
+# print(lista)
 
-#INSERT
-lista.insert(2,200)
-print(lista)
+# #INSERT
+# lista.insert(2,200)
+# print(lista)
 
 #BUSCAR UN INDICE
 #print(list(e for e in list_ejem if e['name']  == 'Juan')[0])
 
+#INSERTAR UH ELEMENTO EN UN INDICE ESPECÍFICO
+# nombres.insert(3, "ana")
+# # si ya la posicion esta ocupada corre al que este ocupando la posicion
 
 
+# #MOSTRAR EL TAMAÑO DE LA LISTA
+# print(len(nombres))
 
 
-# Construir un programa que reciba el tamaño de una lista  y la llene con múltiplos de 7
-
-# arraylength= int(input("Digite el largo del array: "))
-# arraynumero = []
-
-# for i in range(1, arraylength+1):
-#   arraynumero.append(i * 7)
-
-# print (f"{arraynumero} lista de números multiplos de 7")
+# #REMOVER EL ELEMENTO
+# nombres.remove("juan")
+# print(nombres)
+#si hay dos nombres iguales, elimina solo uno
 
 
+#REMOVER ELEMENTO POR INDICE
+# del nombres[1]
 
-#Construir un programa que reciba el tamaño de una lista y la llene con números entregados por el usuario
-
-
-# arraylength= int(input("Digite el largo del array: "))
-# arraynumero = []
-
-# for i in range(0, arraylength):
-#   num = int(input("Digite un número: "))
-#   arraynumero.append(num)
-
-# print (f"{arraynumero} lista de números")
+# #LIMPIAR LISTA
+# nombres.clear()
 
 
-
-#Leer 8 ciudades colombianas, guardarlas en una lista y mostrar en orden inverso los datos ingresados
-
-# ciudades = []
-
-# for i in range(0, 7):
-#   ciudad = input("Digite el nombre de una ciudad: ")
-#   ciudades.append(ciudad)
-
-# ciudades.reverse()
-# print (f"{ciudades} lista de ciudades")
-
-
-
-#Leer 20 números enteros y guardar en una lista, después permitir que el usuario 
-# busque un número y si este se encuentra en la lista indicar con un mensaje que el resultado es exitoso
-
-
-arraynumero = []
-
-for i in range(0, 20):
-  num = int(input("Digite un número: "))
-  arraynumero.append(num)
-
-numero_buscado = int(input("Digite el numero que desea buscar: "))
-if(numero_buscado in arraynumero):
-  print (f"{numero_buscado} si está en la lista ")
-else:
-  print (f"{numero_buscado} no está en la lista ")
-  
