@@ -15,5 +15,5 @@
 - Tuplas ( )
 - Diccionarios { }
 
-## Deisy Ruiz Osornor -Desarrollador
+## Deisy Ruiz Osorno -Desarrollador
 Medellin-2022
