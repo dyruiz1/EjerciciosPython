@@ -23,11 +23,8 @@
     # 3: sume 100 al numero ingresado
     # 4: eleve a la 2 el numero ingresado   
 
-
-
     # from cmath import sqrt
     # import math
-
 
     # observador = 100
     # print("** MENU**")
