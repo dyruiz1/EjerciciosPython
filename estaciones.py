@@ -32,9 +32,13 @@ def is_autumn(inputDate):
 
 def is_winter(inputDate):
     if (1 <= inputDate.month <= 3):
+        # si es enero, febrero o marzo, la fecha inicial no esta en el mismo año, si no en el año pasado
+        #la fecha final si esta en el año actual-
         startDate = datetime.datetime.strptime(str(inputDate.year - 1) + "-12-21", '%Y-%m-%d')
         endDate = datetime.datetime.strptime(str(inputDate.year) + "-03-20", '%Y-%m-%d')
     else:
+        #si la fecha no es ninguna de las anteriores, debo calcular con el año actual, la fecha inicial inicia en el año actual
+        #cuando pasa al siguiente año se debe incrementar 
         startDate = datetime.datetime.strptime(str(inputDate.year) + "-12-21", '%Y-%m-%d')
         endDate = datetime.datetime.strptime(str(inputDate.year + 1) + "-03-20", '%Y-%m-%d')
 
